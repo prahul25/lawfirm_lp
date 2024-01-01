@@ -1,0 +1,101 @@
+.Third {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
+.thirdWrapper {
+    width: 1139px;
+    height: 551px;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+}
+
+.headWrapper {
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.headText {
+    font-size: 54px !important;
+    font-weight: 600 !important;
+    line-height: 77px;
+    letter-spacing: 0em;
+    color: white;
+
+}
+
+
+
+.bodyWrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    width: 100%;
+    height: 100%;
+    background-color: inherit;
+    cursor: default;
+}
+
+.cardWrapper1 {
+    width: 359px;
+    height: 377px;
+    border-radius: 14px;
+    border: solid 1.4px;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    border-color:  #2e2e2e;
+}
+.cardWrapper2 {
+    width: 359px;
+    height: 377px;
+    border-radius: 14px;
+    border: 1.4px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+}
+.cardWrapper3 {
+    width: 359px;
+    height: 377px;
+    border-radius: 14px;
+    border: solid 1.4px;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    border-color: #2e2e2e;
+}
+
+.cardMainText {
+    margin-top: 20px !important;
+    margin-left: 25px !important;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.cardPTextWrapper {
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 293px;
+    height: 69px;
+    color: #4c4c4c
+}
+
+.btn {
+    margin-top: 35px !important;
+    margin-left: 25px !important;
+    width: 121px;
+    height: 43px;
+    border-radius: 23.5px !important;
+    color: black !important;
+    background-color: #E3B748 !important;
+}

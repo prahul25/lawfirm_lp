@@ -1,0 +1,111 @@
+.fourth {
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    background-color: inherit;
+    width: 1140px;
+    height: 1228px;
+    border-radius: 14px;
+    margin-top: 100px;
+}
+
+.textWrapper {
+    display: flex;
+    justify-content: center;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 77px;
+    letter-spacing: 0em;
+    color: white;
+}
+
+.LaptopImg {
+    background-image: url(../../assets/Laptop.png);
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: "10px";
+    margin-bottom: "20px";
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 342px;
+    width: 752px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.HandShakeImg {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-image: url(../../assets/HandShake.png);
+    width: 358px;
+    height: 342px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.BuildingImg {
+    background-image: url(../../assets/Building.png);
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 358px;
+    height: 342px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Paper{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    width: 752px;
+height: 342px;
+background-image: url(../../assets/Paper.png);
+border-radius: 14px
+
+
+}
+
+.SunImg{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    width: 752px;
+height: 342px;
+border-radius: 14px;
+background-image: url(../../assets/SunView.png);
+margin-left:10px;
+ margin-right:10px;
+  margin-top:20px;
+}
+
+.FreindsImg{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 24px;
+    font-weight: 600;
+    width: 358px;
+height: 342px;
+margin-top:20px;
+border-radius: 14px;
+background-image: url(../../assets/TwoFriends.png);
+
+}

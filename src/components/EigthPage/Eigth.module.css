@@ -1,0 +1,55 @@
+.eight {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1245px;
+    height: 356px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+}
+
+.cardWrapper {
+    width: 686px;
+    height: 170px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.inputText1 {
+    width: 276px;
+    height: 53px;
+    border-radius: 8px 0px 0px 8px;
+    background-color: #E4E4E4;
+    font-style: italic;
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.inputText2 {
+    width: 276px;
+    height: 53px;
+    background-color: #E4E4E4;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+
+}
+
+.btn {
+    margin-top: 35px !important;
+    color: black !important;
+    background-color: #E3B748 !important;
+    width: 116px;
+    height: 53px;
+    border-radius: 0px 8px 8px 0px !important;
+    font-size: 14px;
+    font-weight: 600;
+}
