@@ -51,3 +51,33 @@ justify-content: space-between;
     height: 50px;
      background-color: #1D1D1D !important;
 }
+
+.faq{
+
+        font-size: 54px !important;
+        font-weight: 600 !important;
+        line-height: 75px;
+        letter-spacing: 0em;
+        color: #FFFFFF;
+
+}
+
+.head1{
+
+        color: #FFFFFF;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0em;
+
+}
+
+.para1{
+
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 29px;
+        letter-spacing: 0em;
+        color: #606060;
+
+}

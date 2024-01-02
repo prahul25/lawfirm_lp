@@ -25,14 +25,12 @@ const Sixth = () => {
                 <Typography
                   variant="p"
                   gutterBottom
-                  style={{
-                    fontSize: "24px",
+                  style={{fontSize: "24px",
                     fontWeight: "600",
                     lineHeight: "24px",
                     letterSpacing: "0em",
                     color: "#FFFFFF",
-                    marginBottom: "2px",
-                  }}
+                    marginBottom: "2px"}}
                 >
                   Daniel Def
                 </Typography>

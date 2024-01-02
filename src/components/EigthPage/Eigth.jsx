@@ -11,14 +11,7 @@ const Eight = () => {
           <Typography
             variant="p"
             gutterBottom
-            style={{
-              fontFamily: "Helvetica",
-              fontSize: "55px",
-              fontWeight: " 500",
-              lineHeight: "75px",
-              letterSpacing: " 0em",
-              color: "#FFFFFF",
-            }}
+            className={styles.head}
           >
             Subscribe Our Newsletter
           </Typography>

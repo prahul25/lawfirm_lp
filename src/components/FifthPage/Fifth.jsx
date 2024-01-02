@@ -11,31 +11,58 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper";
 
 const data = [
+  
   {
-    img: (FirstImg) ,
+    key : 1,
+    img: FirstImg,
     name: "Jane Cooper",
     role: "Ceo of Hunt",
     details:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
   },
   {
-    img: (SecondImg),
-    name : "Devon Lane",
-    role : "Ceo of Hunt",
+    key: 2,
+    img: SecondImg,
+    name: "Devon Lane",
+    role: "Ceo of Hunt",
     details:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
   },
   {
-    img: (ThirdImg),
+    key: 3,
+    img: ThirdImg,
     name: "Robert Fox",
-    role : "Ceo of Hunt",
+    role: "Ceo of Hunt",
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
+  },
+  {
+    key : 4,
+    img: FirstImg,
+    name: "Jane Cooper",
+    role: "Ceo of Hunt",
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
+  },
+  {
+    key: 5,
+    img: SecondImg,
+    name: "Devon Lane",
+    role: "Ceo of Hunt",
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
+  },
+  {
+    key: 6,
+    img: ThirdImg,
+    name: "Robert Fox",
+    role: "Ceo of Hunt",
     details:
       "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequatduis enim velit mollit Exer. sit aliqua dolor do amet sint. Velit officia",
   },
 ];
 
 const Fifth = () => {
-  console.log(data)
   return (
     <div className={styles.Fifth}>
       <div className={styles.FifthWrapper}>
@@ -52,8 +79,6 @@ const Fifth = () => {
             </Typography>
           </div>
           <div style={{ marginTop: "40px", width: "200px", height: "92px" }}>
-            {/* <Left />
-            <Right /> */}
             <Button className={styles.btn1} variant="contained">
               <img src={LeftIcon} alt="left icon" className="prev" />
             </Button>
@@ -68,232 +93,44 @@ const Fifth = () => {
           style={{ width: "100%", marginTop: "75px" }}
           slidesPerView={3}
           navigation={{ nextEl: `.next`, prevEl: `.prev` }}
-          pagination={{ clickable: true }}
           modules={[Navigation, Pagination]}
-          allowTouchMove
+          loop={true}
+          className="myswiper"
         >
           <div className={styles.bodyWrapper}>
             {/* ----------------------use map to iterate data of team members details (to reduce code length) */}
             {data.map((item) => {
-              return <SwiperSlide key={item.name}>
-                <div className={styles.cardWrapper1}><img src={item.image} alt={item.name} className={styles.image} />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  {item.name}
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                 {item.role}
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    {item.details}
-                  </Typography>
-                </div>
-                </div>
-              </SwiperSlide>
+              return (
+                <SwiperSlide key={item.key}>
+                  <div className={styles.cardWrapper1}>
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className={styles.image}
+                    />
+                    <Typography
+                      variant="h5"
+                      gutterBottom
+                      className={styles.cardMainText}
+                    >
+                      {item.name}
+                    </Typography>
+                    <Typography
+                      variant="p"
+                      gutterBottom
+                      className={styles.cardMainTextPost}
+                    >
+                      {item.role}
+                    </Typography>
+                    <div className={styles.cardPTextWrapper}>
+                      <Typography variant="p" gutterBottom>
+                        {item.details}
+                      </Typography>
+                    </div>
+                  </div>
+                </SwiperSlide>
+              );
             })}
-            {/* -----------------------This is lengthy way show team members details */}
-            <SwiperSlide>
-              <div className={styles.cardWrapper1}>
-                <img
-                  src={FirstImg}
-                  alt="Gift"
-                  className={styles.image}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Jane Cooper
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className={styles.cardWrapper2}>
-                <img
-                  src={SecondImg}
-                  alt="Gift"
-                  className={styles.image}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Devon Lane
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
-
-            <SwiperSlide>
-              <div className={styles.cardWrapper3}>
-                <img
-                  src={ThirdImg}
-                  alt="Gift"
-                  className={styles.image}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Robert Fox
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
-            {/* ---------------------------------------lslide 4-------------------------------- */}
-            <SwiperSlide>
-              <div className={styles.cardWrapper1}>
-                <img
-                  src={FirstImg}
-                  alt="Gift"
-                  className={styles.image}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Jane Cooper
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
-            {/* --------------------------------------------slide 5 ----------------------------------------- */}
-            <SwiperSlide>
-              <div className={styles.cardWrapper2}>
-                <img
-                  src={SecondImg}
-                  alt="Gift"
-                  style={{
-                    width: "101px",
-                    height: "101px",
-                    marginTop: "25px",
-                    marginLeft: "25px",
-                  }}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Devon Lane
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
-            {/* ----------------------------------6 slide-------------------- */}
-            <SwiperSlide>
-              <div className={styles.cardWrapper3}>
-                <img
-                  src={ThirdImg}
-                  alt="Gift"
-                  style={{
-                    width: "101px",
-                    height: "101px",
-                    marginTop: "25px",
-                    marginLeft: "25px",
-                  }}
-                />
-                <Typography
-                  variant="h5"
-                  gutterBottom
-                  className={styles.cardMainText}
-                >
-                  Robert Fox
-                </Typography>
-                <Typography
-                  variant="p"
-                  gutterBottom
-                  className={styles.cardMainTextPost}
-                >
-                  Ceo of Hunt
-                </Typography>
-                <div className={styles.cardPTextWrapper}>
-                  <Typography variant="p" gutterBottom>
-                    Amet minim mollit non deserunt ullamco est sit aliqua dolor
-                    do amet sint. Velit officia consequatduis enim velit mollit
-                    Exer. sit aliqua dolor do amet sint. Velit officia
-                  </Typography>
-                </div>
-              </div>
-            </SwiperSlide>
           </div>
         </Swiper>
       </div>

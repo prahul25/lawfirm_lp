@@ -18,12 +18,7 @@ const Third = () => {
             <img
               src={GiftImg}
               alt="Gift"
-              style={{
-                width: "101px",
-                height: "101px",
-                marginTop: "25px",
-                marginLeft: "25px",
-              }}
+              className={styles.images}
             />
             <Typography
               variant="h5"
@@ -44,12 +39,7 @@ const Third = () => {
             <img
               src={GiftImg}
               alt="Gift"
-              style={{
-                width: "101px",
-                height: "101px",
-                marginTop: "25px",
-                marginLeft: "25px",
-              }}
+              className={styles.images}
             />
             <Typography
               variant="h5"
@@ -70,12 +60,7 @@ const Third = () => {
             <img
               src={GiftImg}
               alt="Gift"
-              style={{
-                width: "101px",
-                height: "101px",
-                marginTop: "25px",
-                marginLeft: "25px",
-              }}
+              className={styles.images}
             />
             <Typography
               variant="h5"
